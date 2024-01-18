@@ -2,6 +2,6 @@
 
 pip install --upgrade pip
 pip install wheel
-pip install gunicorn
+pip install gunicorn flask
 
-source pip-env/Scripts/activate
+pip install -r requirements.txt
