@@ -45,7 +45,7 @@ def receive_post():
     response = "Rating not recieved!"
     if not int(data) > 5 and not int(data) < 1 and not weekend:
         list.append(data)
-        response = f"Rating received successfully! Using list {list}."
+        response = f"Rating received successfully! Using list {weekday}."
     else:
         if weekend:
             response = "It's a weekend!"
