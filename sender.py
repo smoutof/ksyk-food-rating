@@ -9,7 +9,7 @@ while True:
         input()
         exit()
 
-    url = 'http://127.0.0.1:5000/receive_post'  # Update with the correct URL
+    url = 'https://ksyk-food-rating-average.onrender.com/receive_post'  # Update with the correct URL
 
     data_to_send = rating
 

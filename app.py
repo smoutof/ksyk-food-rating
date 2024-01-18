@@ -17,7 +17,7 @@ def calculate_average():
 def receive_post():
     data = request.json  # Assumes JSON payload
     response = "Rating not recieved!"
-    if not int(data) > 5 and not int(data) < 0:
+    if not int(data) > 5 and not int(data) < 1:
         received_posts.append(data)
         response = "Rating received successfully!"
     else:
