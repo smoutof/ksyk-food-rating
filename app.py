@@ -28,7 +28,7 @@ def receive_post():
 @app.route('/show_posts', methods=['GET'])
 def show_posts():
     send = calculate_average()
-    return jsonify(round(send, 2))
+    return jsonify({'Rating':round(send, 2)})
 
 if __name__ == '__main__':
     app.run(debug=True)
