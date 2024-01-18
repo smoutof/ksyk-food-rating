@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from datetime import datetime
 
 app = Flask(__name__)
-received_posts = []
+
 mon_list = []
 tue_list = []
 wed_list = []
@@ -45,12 +45,12 @@ def receive_post():
     response = "Rating not recieved!"
     if not int(data) > 5 and not int(data) < 1 and not weekend:
         list.append(data)
-        response = f"Rating received successfully! Using list {weekday}."
+        response = "Arvostelu tallennettu!."
     else:
         if weekend:
-            response = "It's a weekend!"
+            response = "Viikonloppu!"
         else:
-            response = "Rating too high or low!"
+            response = "Arvostelu liian korkea/matala!"
     
     return response
 
